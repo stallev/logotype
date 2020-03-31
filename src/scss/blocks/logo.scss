@@ -1,2 +1,11 @@
 .logo{
+  &__home-link{
+    display: block;
+    color: $thumbnail-bg-color;
+    font-family: "Panton - Black";
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 4.5px;
+  }
 }

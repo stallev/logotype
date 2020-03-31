@@ -1,12 +1,13 @@
 .container{
-  width: 320px;
+  width: $desctop-width;
   margin: 0 auto;
   box-sizing: border-box;
-}
-@media (min-width: $tablet-width) {
-  .container{
-    width: 768px;
+  &--header-upper{
+    display: flex;
+    justify-content: space-between;
   }
-}
-@media (min-width: $desctop-width) {
+  &--header-bottom{
+    display: flex;
+    align-items: center;
+  }
 }

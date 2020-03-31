@@ -1,2 +1,32 @@
 .header{
+  &__upper{
+    background-color: $content-color;
+    opacity: .9;
+    color: #ffffff;
+  }
+  &__upper-contacts{
+    display: flex;
+    align-items: center;
+  }
+  &__upper-contacts-text{
+    display: block;
+    font-family: $content-ff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    // Text style for "бесплатно"
+    letter-spacing: 0.33px;
+  }
+  &__upper-contacts-number{
+    display: block;
+    padding: 5px 0;
+    margin-left: 20px;
+    font-family: $content-ff;
+    color: $blue-text-color;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    // Text style for "8, -800-00"
+    letter-spacing: 0.5px;
+  }
 }

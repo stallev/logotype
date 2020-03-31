@@ -9,22 +9,55 @@
 </head>
 <body>
   <header class="header">
-    <div class="container container--header">
-      <div class="header__upper">
-        <div class="header__logo-toggle">
-            <div class="logo logo--header">
-              <picture class="logo__image logo__image--header">
-                <source media="(min-width: 768px)" srcset="img/decor/logo-tablet.png">
-                <source media="(min-width: 1360px)" srcset="img/decor/logo-desktop.png">
-                <img src="img/decor/logo.png" alt="logo">
-              </picture>
-            </div>
-            <div class="header__toggle">
-              <button class="header__toggle-button header__toggle-button--cross"></button>
-              <button class="header__toggle-button header__toggle-button--hamburger"></button>
-            </div>
-
-          </div>
+    <div class="header__upper">
+      <div class="container container--header-upper">
+        <nav class="global-nav">
+          <a href="#" class="global-nav__item">Доставка</a>
+          <a href="#" class="global-nav__item">Оплата</a>
+          <a href="#" class="global-nav__item">Возврат</a>
+          <a href="#" class="global-nav__item">Оптовым покупателям</a>
+        </nav>
+        <div class="header__upper-contacts">
+          <span class="header__upper-contacts-text">бесплатно по России</span>
+          <a href="tel:880000000000" class="header__upper-contacts-number">8-800-000-00-00</a>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container container--header-bottom">
+        <div class="logo">
+          <a href="#" class="logo__home-link">
+            LOGOtype
+          </a>
+        </div>
+        <div class="search">
+          <form action="http://localhost:3000/" class="search__form">
+            <input type="text" name="search-field" placeholder="Что Вы ищете?" class="search__form-input">
+            <input type="submit" class="search__submit" value="">
+          </form>
+        </div>
+        <div class="user-links">
+          <a href="#" class="user-links__item">
+            <img src="./img/decor/refer-icon.png" alt="refer" class="user-links__item-image">
+          </a>
+          <a href="#" class="user-links__item">
+            <img src="./img/decor/heart-outline.png" alt="likes" class="user-links__item-image">
+            <span class="user-links__item-number">3</span>
+          </a>
+          <a href="#" class="user-links__item">
+            <img src="./img/decor/shopping-cart.png" alt="" class="user-links__item-image">
+            <span class="user-links__item-number">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-nav">
+      <div class="container container--main-nav">
+        <div class="main-nav__categories-header">
+          <h4 class="main-nav__categories-title">Каталог товаров</h4>
+        </div>
         <nav class="nav nav--header">
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">главная</a></li>
@@ -36,23 +69,8 @@
           </ul>
         </nav>
       </div>
-      <div class="header__bottom">
-        <div class="page-title">
-            <h1 class="page-title__title">
-              Дизайн интерьеров
-            </h1>
-            <p class="page-title__description">
-              Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.
-            </p>
-          </div>
-          <a href="#" class="header__bottom-menu-link">
-            ЗАКАЗАТЬ ДИЗАЙН
-          </a>
-        </div>
-      </div>
     </div>
-  </header>
-  <main class="main">
+    <section class="main-goods"></section>
   </main>
   <footer class="footer">
     <div class="container container--footer">
