@@ -1,1 +1,6 @@
-.advertise-main{}
+.advertise-main{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+}

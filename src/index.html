@@ -55,22 +55,161 @@
   <main class="main">
     <div class="main-nav">
       <div class="container container--main-nav">
-        <div class="main-nav__categories-header">
-          <h4 class="main-nav__categories-title">Каталог товаров</h4>
-        </div>
-        <nav class="nav nav--header">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">главная</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">преимущества</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">портфолио</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">наши услуги</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">отзывы</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">контакты</a></li>
+        <nav class="main-nav__content">
+          <div class="main-nav__categories">
+            <button class="main-nav__categories-toggle"></button>
+            <h4 class="main-nav__categories-title">Каталог товаров</h4>
+            <button type="button" name="button" class="main-nav__categories-view"></button>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">о компании</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">акции</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">новости</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">блог</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">эксперты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">контакты</a></li>
           </ul>
         </nav>
       </div>
     </div>
-    <section class="main-goods"></section>
+    <section class="main-goods">
+      <div class="container container--main-goods">
+        <div class="categories">
+          <ul class="categories__list">
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Катушки</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Удилища</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Приманки</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Воблеры</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Лески</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Шнуры</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Поплавки</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Крючки</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Аксессуары</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Одежда</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">снаряжение</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Электроника</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Зимняя рыбалка</a>
+            </li>
+            <li class="categories__item">
+              <a href="#" class="categories__item-link">Другое</a>
+            </li>
+          </ul>
+        </div>
+        <div class="advertise-main">
+          <div class="advertise-slider">
+            <div class="advertise-slider__slide-list">
+              <article class="advertise-slide">
+                <div class="advertise-slide__info">
+                  <h3 class="advertise-slide__title">
+                    Специальные предложения
+                  </h3>
+                  <p class="advertise-slide__description">
+                    катушка Adrenalin 7300 BC
+                  </p>
+                  <span class="advertise-slide__price">5600р</span>
+                  <button class="advertise-slide__buy" type="button">купить</button>
+                </div>
+                <img class="advertise-slide__image" src="../img/content/reel-main.png" alt="reel">
+              </article>
+            </div>
+            <div class="advertise-slider__controls">
+              <span class="advertise-slider__controls-item advertise-slider__controls-item--active"></span>
+              <span class="advertise-slider__controls-item"></span>
+              <span class="advertise-slider__controls-item"></span>
+            </div>
+          </div>
+          <div class="advertise-main__list">
+            <article class="adv-item">
+              <h3 class="adv-item__title">
+                новые приманки
+              </h3>
+              <p class="adv-item__description">
+                для подледной ловли
+              </p>
+              <a href="#" class="adv-item__read-more"></a>
+              <img src="../img/content/rawbite.png" alt="rawbite" class="adv-item__image adv-item__image--1">
+            </article>
+            <article class="adv-item">
+              <h3 class="adv-item__title">скачайте каталог</h3>
+              <p class="adv-item__description">для оптовиков</p>
+              <a href="#" class="adv-item__read-more"></a>
+              <img src="../img/content/fishbook.png" alt="fishbook" class="adv-item__image adv-item__image--2">
+            </article>
+            <article class="adv-item">
+              <h3 class="adv-item__title">эксперты отвечают</h3>
+              <p class="adv-item__description">на ваши вопросы</p>
+              <a href="#" class="adv-item__read-more"></a>
+              <img src="../img/content/experts-answer.png" alt="expert" class="adv-item__image adv-item__image--3">
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sales-hits">
+      <div class="container container--sales">
+        <div class="section-title">
+          <h2 class="section-title__text">хиты продаж</h2>
+          <a href="#" class="section-title__all-content">весь каталог</a>
+        </div>
+        <div class="thumbnail-list">
+          <article class="product-item">
+            <img src="../img/content" alt="" class="product-item__image">
+            <div class="product-item__info">
+              <div class="product-item__popularity">
+                <div class="product-item__rate">
+                  <span class="product-item__star"></span>
+                </div>
+                <button class="product-item__like"></button>
+              </div>
+              <a href="#" class="product-item__title">
+                <h3 class="product-item__title-text">
+                  <span class="product-item__title-kind">Удилище</span>
+                  <span class="product-item__title-name">
+
+                  </span>
+                </h3>
+              </a>
+              <div class="product-item__price">
+                <div class="product-item__price-values">
+                  <span class="product-item__current-price"></span>
+                  <span class="product-item__old-price"></span>
+                </div>
+                <div class="product-item__discount-info">
+                  <span class="product-item__discount-message">Вы экономите</span>
+                  <span class="product-item__discount-value"></span>
+                </div>
+              </div>
+              <button class="product-item__to-card">в корзину</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container container--footer">

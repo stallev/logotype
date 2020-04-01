@@ -1,1 +1,66 @@
-.adv-item{}
+.adv-item{
+  position: relative;
+  padding-top: 25px;
+  padding-left: 24px;
+  padding-bottom: 35px;
+  width: 262px;
+  background: linear-gradient(to right, #0187c1 0%, #3ac0ef 100%);
+  &__title{
+    width: 135px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-family: $content-ff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    // Text style for "новые , пр"
+    letter-spacing: 0.5px;
+  }
+  &__description{
+    padding-bottom: 12px;
+    color: #4cd2fe;
+    font-family: "Panton - Semi Bold";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    // Text style for "д, ля опто"
+    letter-spacing: 0.7px;
+  }
+  &__read-more{
+    position: relative;
+    display: block;
+    width: 1px;
+    height: 1px;
+    background-color: $content-color;
+    border: 12px solid $content-color;
+    border-radius: 50%;
+    &::before{
+      position: absolute;
+      display: block;
+      content: '';
+      box-sizing: border-box;
+      width: 7px;
+      height: 13px;
+      right: -3px;
+      top: -6px;
+      background-image: url("../img/decor/arrow-point-to-right.png");
+      background-repeat: no-repeat;
+    }
+  }
+  &__image{
+    position: absolute;
+    &--1{
+      top: 10px;
+      right: -11px;
+    }
+    &--2{
+      top: -9px;
+      right: -7px;
+    }
+    &--3{
+      top: -26px;
+      right: -1px;
+    }
+  }
+}

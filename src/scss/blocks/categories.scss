@@ -1,1 +1,45 @@
-.categories{}
+.categories{
+  width: 263px;
+  &__list{
+    display: flex;
+    flex-direction: column;
+  }
+  &__item-link{
+    position: relative;
+    display: block;
+    margin-bottom: 2px;
+    padding: 0 5px 0 60px;
+    background-image: url("../img/decor/grid-bg.png");
+    color: $content-color;
+    font-family: $content-ff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 44px;
+    // Text style for "К, атушки"
+    letter-spacing: 0.75px;
+    &::before{
+      position: absolute;
+      display: block;
+      content: '';
+      box-sizing: border-box;
+      width: 8px;
+      height: 8px;
+      left: 21px;
+      top: 20px;
+      background-image: url("../img/decor/list-style-cat.png");
+      background-repeat: no-repeat;
+    }
+    &::after{
+      position: absolute;
+      display: block;
+      content: '';
+      box-sizing: border-box;
+      width: 7px;
+      height: 13px;
+      right: 21px;
+      top: 20px;
+      background-image: url("../img/decor/arrow-point-to-right.png");
+      background-repeat: no-repeat;
+    }
+  }
+}

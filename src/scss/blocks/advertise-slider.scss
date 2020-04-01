@@ -1,1 +1,23 @@
-.advertise-slider{}
+.advertise-slider{
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #0187c1 0%, #3ac0ef 100%);
+  &__controls{
+    display: flex;
+    justify-content: space-between;
+    width: 75px;
+  }
+  &__controls-item{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-repeat: no-repeat;
+    background-image: url("../img/decor/slide-icon-control.png");
+    &--active{
+      background-image: url("../img/decor/slide-icon-control-current.png");
+    }
+  }
+}

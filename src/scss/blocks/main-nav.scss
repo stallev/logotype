@@ -1,1 +1,77 @@
-.main-nav{}
+.main-nav{
+  margin-bottom: 30px;
+  background-image: url("../img/decor/grid-bg10-60.png");
+  background-repeat: repeat;
+  &__content{
+    display: flex;
+  }
+  &__categories{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 20px;
+    background-color: $blue-text-color;
+    background-image: linear-gradient(to left, #0187c1 0%, #3ac0ef 100%);
+  }
+  &__categories-toggle{
+    display: block;
+    width: 25px;
+    height: 18px;
+    background-image: url("../img/decor/hamburger.png");
+    background-repeat: no-repeat;
+  }
+  &__categories-view{
+    display: block;
+    width: 7px;
+    height: 13px;
+    background-image: url("../img/decor/arrow-point-to-right.png");
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+  }
+  &__categories-title{
+    padding: 0 15px;
+    color: #ffffff;
+    font-family: "Panton - Semi Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    // Text style for "К, аталог"
+    letter-spacing: 0.9px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    width: 880px;
+  }
+  &__item{
+    display: flex;
+    margin: auto;
+  }
+  &__link{
+    position: relative;
+    display: block;
+    color: $content-color;
+    font-family: $content-ff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    // Text style for "о,  компан"
+    letter-spacing: 0.7px;
+    &:hover{
+      color: $blue-text-color;
+    }
+  }
+}
+.main-nav__link:hover::before{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 1px;
+  top: 0px;
+  left: 0;
+  border: 10px solid transparent;
+  border-top: 10px solid green;
+}

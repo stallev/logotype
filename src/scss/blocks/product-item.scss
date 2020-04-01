@@ -1,1 +1,5 @@
-.product-item{}
+.product-item{
+  display: flex;
+  flex-direction: column;
+  width: 251px;
+}
