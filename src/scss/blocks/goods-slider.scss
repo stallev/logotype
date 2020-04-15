@@ -1,0 +1,40 @@
+.goods-slider{
+  position: relative;
+  &__controls{
+    position: absolute;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    top: -71px;
+    right: 1px;
+  }
+  &__control--prev,
+  &__control--next{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 1px;
+    height: 1px;
+    background-color: $content-color;
+    border: 12px solid $content-color;
+    border-radius: 50%;
+    &::before{
+      position: absolute;
+      display: block;
+      content: '';
+      box-sizing: border-box;
+      width: 7px;
+      height: 13px;
+      right: -3px;
+      top: -6px;
+      background-image: url("../img/decor/arrow-point-to-right.png");
+      background-repeat: no-repeat;
+    }
+  }
+  &__control--prev{
+    margin-right: 5px;
+    &::before{
+      transform: rotate(180deg);
+    }
+  }
+}

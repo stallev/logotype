@@ -5,19 +5,40 @@
   padding-left: 40px;
   border-radius: 5px;
   background: linear-gradient(to right, #0187c1 0%, #3ac0ef 100%);
-  &__controls{
+  &__indicators{
     display: flex;
     justify-content: space-between;
     width: 75px;
   }
-  &__controls-item{
+  &__indicators-item{
     display: block;
     width: 8px;
     height: 8px;
-    background-repeat: no-repeat;
-    background-image: url("../img/decor/slide-icon-control.png");
+    border: 5px solid gray;
+    border-radius: 50%;
     &--active{
-      background-image: url("../img/decor/slide-icon-control-current.png");
+      border-color: rgb(243, 40, 4);
+    }
+  }
+  &__controls{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 10px;
+    top: 200px;
+    width: 850px;    
+  }
+  &__controls-item{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-top: 2px solid rgb(63, 57, 57);
+    border-left: 2px solid rgb(63, 57, 57);
+    &--prev{
+      transform: rotate(-45deg);
+    }
+    &--next{
+      transform: rotate(135deg);
     }
   }
 }

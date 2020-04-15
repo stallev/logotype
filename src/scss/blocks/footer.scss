@@ -1,2 +1,79 @@
 .footer{
+  padding-bottom: 50px;
+  background-color: $content-color;
+  color: #ffffff;
+  font-family: $content-ff;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  &__content-company{
+    width: 263px;
+  }
+  &__content-navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+  }
+  &__links-block-title{
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    // Text style for "к, омпания"
+    letter-spacing: 2.4px;
+  }
+  &__link{
+    display: block;
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    // Text style for "о,  компан"
+    letter-spacing: 0.6px;
+  }
+  &__materials{
+    text-transform: none;
+  }
+  &__link--info{
+    opacity: 1;
+    color: #009add;
+    font-family: "Panton - Semi Bold";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: underline;
+    // Text style for "i, nfo@mai"
+    letter-spacing: 0.15px;
+    text-transform: none;
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__copyright{
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: "Panton - Semi Bold";
+    font-size: 11px;
+    font-weight: 400;
+    // Text style for "2, 010-201"
+    letter-spacing: 0.17px;
+  }
+  &__social{
+    display: flex;
+    align-items: center;
+  }
+  &__social-link{
+    display: block;
+    margin-left: 70px;
+  }
+  &__social-link-image{
+    display: block;
+    margin: 0;
+  }
 }

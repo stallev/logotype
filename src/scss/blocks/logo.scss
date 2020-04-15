@@ -1,11 +1,26 @@
 .logo{
   &__home-link{
     display: block;
-    color: $thumbnail-bg-color;
     font-family: "Panton - Black";
     font-size: 50px;
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 4.5px;
+    &--header{
+      color: $thumbnail-bg-color;
+    }
+    &--footer{
+      color: #6d6d6d;
+    }
+  }
+  &__description--footer{
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: "Panton - Semi Bold";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    // Text style for "о, фициаль"
+    letter-spacing: 2.06px;
   }
 }

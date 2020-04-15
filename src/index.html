@@ -26,7 +26,7 @@
     <div class="header__bottom">
       <div class="container container--header-bottom">
         <div class="logo">
-          <a href="#" class="logo__home-link">
+          <a href="#" class="logo__home-link logo__home-link--header">
             LOGOtype
           </a>
         </div>
@@ -123,7 +123,7 @@
         <div class="advertise-main">
           <div class="advertise-slider">
             <div class="advertise-slider__slide-list">
-              <article class="advertise-slide">
+              <article class="advertise-slide advertise-slide--active">
                 <div class="advertise-slide__info">
                   <h3 class="advertise-slide__title">
                     Специальные предложения
@@ -136,11 +136,41 @@
                 </div>
                 <img class="advertise-slide__image" src="../img/content/reel-main.png" alt="reel">
               </article>
+              <article class="advertise-slide">
+                <div class="advertise-slide__info">
+                  <h3 class="advertise-slide__title">
+                    Специальные предложения2
+                  </h3>
+                  <p class="advertise-slide__description">
+                    катушка Adrenalin 7300 BC
+                  </p>
+                  <span class="advertise-slide__price">5600р</span>
+                  <button class="advertise-slide__buy" type="button">купить</button>
+                </div>
+                <img class="advertise-slide__image" src="../img/content/reel-main.png" alt="reel">
+              </article>
+              <article class="advertise-slide">
+                <div class="advertise-slide__info">
+                  <h3 class="advertise-slide__title">
+                    Специальные предложения3
+                  </h3>
+                  <p class="advertise-slide__description">
+                    катушка Adrenalin 7300 BC
+                  </p>
+                  <span class="advertise-slide__price">5600р</span>
+                  <button class="advertise-slide__buy" type="button">купить</button>
+                </div>
+                <img class="advertise-slide__image" src="../img/content/reel-main.png" alt="reel">
+              </article>
+            </div>
+            <div class="advertise-slider__indicators">
+              <span class="advertise-slider__indicators-item advertise-slider__indicators-item--active"></span>
+              <span class="advertise-slider__indicators-item"></span>
+              <span class="advertise-slider__indicators-item"></span>
             </div>
             <div class="advertise-slider__controls">
-              <span class="advertise-slider__controls-item advertise-slider__controls-item--active"></span>
-              <span class="advertise-slider__controls-item"></span>
-              <span class="advertise-slider__controls-item"></span>
+              <span class="advertise-slider__controls-item advertise-slider__controls-item--prev"></span>
+              <span class="advertise-slider__controls-item advertise-slider__controls-item--next"></span>
             </div>
           </div>
           <div class="advertise-main__list">
@@ -176,37 +206,535 @@
           <h2 class="section-title__text">хиты продаж</h2>
           <a href="#" class="section-title__all-content">весь каталог</a>
         </div>
-        <div class="thumbnail-list">
-          <article class="product-item">
-            <img src="../img/content" alt="" class="product-item__image">
-            <div class="product-item__info">
-              <div class="product-item__popularity">
-                <div class="product-item__rate">
-                  <span class="product-item__star"></span>
+        <div class="goods-slider goods-slider--sales-hits">
+          <div class="goods-slider__controls goods-slider__controls--sales-hits">
+            <span href="#" class="goods-slider__control goods-slider__control--prev goods-slider__control--prev-sales"></span>
+            <span href="#" class="goods-slider__control goods-slider__control--next goods-slider__control--next-sales"></span>
+          </div>
+          <div class="thumbnail-list thumbnail-list--sales-hits">
+            <article class="product-item product-item--sales-hits product-item--bestseller">
+              <img src="../img/content/hits1.png" alt="" class="product-item__image">
+              <div class="product-item__info">
+                <div class="product-item__popularity ">
+                  <div class="product-item__rate">
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                  </div>
+                  <button class="product-item__like"></button>
                 </div>
-                <button class="product-item__like"></button>
-              </div>
-              <a href="#" class="product-item__title">
-                <h3 class="product-item__title-text">
-                  <span class="product-item__title-kind">Удилище</span>
-                  <span class="product-item__title-name">
+                <a href="#" class="product-item__title">
+                  <span class="product-item__title-outstand">Бестселлер</span>
+                  <h3 class="product-item__title-text">
+                    <span class="product-item__title-kind">катушка</span>
+                    <span class="product-item__title-name">
+                      Adrenalin 7300 BC
+                    </span>
+                  </h3>
+                </a>
+                <div class="product-item__price">
+                  <div class="product-item__price-values">
+                    <span class="product-item__current-price">
+                      13 490 р.
+                    </span>
+                    <span class="product-item__old-price">
 
-                  </span>
-                </h3>
-              </a>
-              <div class="product-item__price">
-                <div class="product-item__price-values">
-                  <span class="product-item__current-price"></span>
-                  <span class="product-item__old-price"></span>
+                    </span>
+                  </div>
+                  <div class="product-item__discount-info">
+                    <span class="product-item__discount-message">Вы экономите</span>
+                    <span class="product-item__discount-value"></span>
+                  </div>
                 </div>
-                <div class="product-item__discount-info">
-                  <span class="product-item__discount-message">Вы экономите</span>
-                  <span class="product-item__discount-value"></span>
-                </div>
+                <button class="product-item__to-card">в корзину</button>
               </div>
-              <button class="product-item__to-card">в корзину</button>
+            </article>
+            <article class="product-item product-item--sales-hits">
+              <img src="../img/content/hits2.png" alt="" class="product-item__image">
+              <div class="product-item__info">
+                <div class="product-item__popularity">
+                  <div class="product-item__rate">
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                  </div>
+                  <button class="product-item__like"></button>
+                </div>
+                <a href="#" class="product-item__title">
+                  <h3 class="product-item__title-text">
+                    <span class="product-item__title-kind">Удилище</span>
+                    <span class="product-item__title-name">
+                      Matze Koch Rollen
+                    </span>
+                  </h3>
+                </a>
+                <div class="product-item__price">
+                  <div class="product-item__price-values">
+                    <span class="product-item__current-price">
+                      13 490 р.
+                    </span>
+                    <span class="product-item__old-price">
+
+                    </span>
+                  </div>
+                  <div class="product-item__discount-info">
+                    <span class="product-item__discount-message">Вы экономите</span>
+                    <span class="product-item__discount-value"></span>
+                  </div>
+                </div>
+                <button class="product-item__to-card">в корзину</button>
+              </div>
+            </article>
+            <article class="product-item product-item--sales-hits">
+              <img src="../img/content/hits3.png" alt="" class="product-item__image">
+              <div class="product-item__info">
+                <div class="product-item__popularity">
+                  <div class="product-item__rate">
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                  </div>
+                  <button class="product-item__like"></button>
+                </div>
+                <a href="#" class="product-item__title">
+                  <h3 class="product-item__title-text">
+                    <span class="product-item__title-kind">Удилище</span>
+                    <span class="product-item__title-name">
+                      Matze Koch Rollen
+                    </span>
+                  </h3>
+                </a>
+                <div class="product-item__price">
+                  <div class="product-item__price-values">
+                    <span class="product-item__current-price">
+                      13 490 р.
+                    </span>
+                    <span class="product-item__old-price">
+
+                    </span>
+                  </div>
+                  <div class="product-item__discount-info">
+                    <span class="product-item__discount-message">Вы экономите</span>
+                    <span class="product-item__discount-value"></span>
+                  </div>
+                </div>
+                <button class="product-item__to-card">в корзину</button>
+              </div>
+            </article>
+            <article class="product-item product-item--sales-hits">
+              <img src="../img/content/hits4.png" alt="" class="product-item__image">
+              <div class="product-item__info">
+                <div class="product-item__popularity">
+                  <div class="product-item__rate">
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                  </div>
+                  <button class="product-item__like"></button>
+                </div>
+                <a href="#" class="product-item__title">
+                  <h3 class="product-item__title-text">
+                    <span class="product-item__title-kind">Удилище</span>
+                    <span class="product-item__title-name">
+                      Matze Koch Rollen
+                    </span>
+                  </h3>
+                </a>
+                <div class="product-item__price">
+                  <div class="product-item__price-values">
+                    <span class="product-item__current-price">
+                      13 490 р.
+                    </span>
+                    <span class="product-item__old-price">
+
+                    </span>
+                  </div>
+                  <div class="product-item__discount-info">
+                    <span class="product-item__discount-message">Вы экономите</span>
+                    <span class="product-item__discount-value"></span>
+                  </div>
+                </div>
+                <button class="product-item__to-card">в корзину</button>
+              </div>
+            </article>
+            <article class="product-item product-item--sales-hits">
+              <img src="../img/content/hits3.png" alt="" class="product-item__image">
+              <div class="product-item__info">
+                <div class="product-item__popularity">
+                  <div class="product-item__rate">
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                  </div>
+                  <button class="product-item__like"></button>
+                </div>
+                <a href="#" class="product-item__title">
+                  <h3 class="product-item__title-text">
+                    <span class="product-item__title-kind">Удилище</span>
+                    <span class="product-item__title-name">
+                      Matze Koch Rollen
+                    </span>
+                  </h3>
+                </a>
+                <div class="product-item__price">
+                  <div class="product-item__price-values">
+                    <span class="product-item__current-price">
+                      13 490 р.
+                    </span>
+                    <span class="product-item__old-price">
+
+                    </span>
+                  </div>
+                  <div class="product-item__discount-info">
+                    <span class="product-item__discount-message">Вы экономите</span>
+                    <span class="product-item__discount-value"></span>
+                  </div>
+                </div>
+                <button class="product-item__to-card">в корзину</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="novelties">
+      <div class="container container--novelties">
+        <div class="section-title">
+          <h2 class="section-title__text">новинки</h2>
+          <a href="#" class="section-title__all-content">весь каталог</a>
+        </div>
+        <div class="goods-slider goods-slider--novelties">
+          <div class="goods-slider__controls goods-slider__controls--novelties">
+            <span href="#" class="goods-slider__control  goods-slider__control--prev goods-slider__control--prev-novelties"></span>
+            <span href="#" class="goods-slider__control goods-slider__control--next goods-slider__control--next-novelties"></span>
+          </div>
+          <div class="thumbnail-list thumbnail-list--novelties">
+            <article class="product-item product-item--discount product-item--novelty">
+              <img src="../img/content/novity1.png" alt="novelty" class="product-item__image">
+              <div class="product-item__info">
+                <div class="product-item__popularity ">
+                  <div class="product-item__rate">
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                  </div>
+                  <button class="product-item__like"></button>
+                </div>
+                <a href="#" class="product-item__title">
+                  <span class="product-item__title-outstand">Акция</span>
+                  <h3 class="product-item__title-text">
+                    <span class="product-item__title-kind">удилище</span>
+                    <span class="product-item__title-name">
+                      Adrenalin 7300 BC
+                    </span>
+                  </h3>
+                </a>
+                <div class="product-item__price">
+                  <div class="product-item__price-values">
+                    <span class="product-item__current-price">
+                      13 490 р.
+                    </span>
+                    <span class="product-item__old-price">
+  
+                    </span>
+                  </div>
+                  <div class="product-item__discount-info">
+                    <span class="product-item__discount-message">Вы экономите</span>
+                    <span class="product-item__discount-value"></span>
+                  </div>
+                </div>
+                <button class="product-item__to-card">в корзину</button>
+              </div>
+            </article>
+            <article class="product-item product-item--novelty">
+              <img src="../img/content/novity2.png" alt="novelty" class="product-item__image">
+              <div class="product-item__info">
+                <div class="product-item__popularity">
+                  <div class="product-item__rate">
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                  </div>
+                  <button class="product-item__like"></button>
+                </div>
+                <a href="#" class="product-item__title">
+                  <h3 class="product-item__title-text">
+                    <span class="product-item__title-kind">Удилище</span>
+                    <span class="product-item__title-name">
+                      Matze Koch Rollen
+                    </span>
+                  </h3>
+                </a>
+                <div class="product-item__price">
+                  <div class="product-item__price-values">
+                    <span class="product-item__current-price">
+                      13 490 р.
+                    </span>
+                    <span class="product-item__old-price">
+  
+                    </span>
+                  </div>
+                  <div class="product-item__discount-info">
+                    <span class="product-item__discount-message">Вы экономите</span>
+                    <span class="product-item__discount-value"></span>
+                  </div>
+                </div>
+                <button class="product-item__to-card">в корзину</button>
+              </div>
+            </article>
+            <article class="product-item product-item--novelty">
+              <img src="../img/content/novity3.png" alt="novelty" class="product-item__image">
+              <div class="product-item__info">
+                <div class="product-item__popularity">
+                  <div class="product-item__rate">
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                  </div>
+                  <button class="product-item__like"></button>
+                </div>
+                <a href="#" class="product-item__title">
+                  <h3 class="product-item__title-text">
+                    <span class="product-item__title-kind">Удилище</span>
+                    <span class="product-item__title-name">
+                      Matze Koch Rollen
+                    </span>
+                  </h3>
+                </a>
+                <div class="product-item__price">
+                  <div class="product-item__price-values">
+                    <span class="product-item__current-price">
+                      13 490 р.
+                    </span>
+                    <span class="product-item__old-price">
+  
+                    </span>
+                  </div>
+                  <div class="product-item__discount-info">
+                    <span class="product-item__discount-message">Вы экономите</span>
+                    <span class="product-item__discount-value"></span>
+                  </div>
+                </div>
+                <button class="product-item__to-card">в корзину</button>
+              </div>
+            </article>
+            <article class="product-item product-item--novelty">
+              <img src="../img/content/novity4.png" alt="novelty" class="product-item__image">
+              <div class="product-item__info">
+                <div class="product-item__popularity">
+                  <div class="product-item__rate">
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                  </div>
+                  <button class="product-item__like"></button>
+                </div>
+                <a href="#" class="product-item__title">
+                  <h3 class="product-item__title-text">
+                    <span class="product-item__title-kind">Удилище</span>
+                    <span class="product-item__title-name">
+                      Matze Koch Rollen
+                    </span>
+                  </h3>
+                </a>
+                <div class="product-item__price">
+                  <div class="product-item__price-values">
+                    <span class="product-item__current-price">
+                      13 490 р.
+                    </span>
+                    <span class="product-item__old-price">
+  
+                    </span>
+                  </div>
+                  <div class="product-item__discount-info">
+                    <span class="product-item__discount-message">Вы экономите</span>
+                    <span class="product-item__discount-value"></span>
+                  </div>
+                </div>
+                <button class="product-item__to-card">в корзину</button>
+              </div>
+            </article>
+            <article class="product-item product-item--novelty">
+              <img src="../img/content/novity3.png" alt="novelty" class="product-item__image">
+              <div class="product-item__info">
+                <div class="product-item__popularity">
+                  <div class="product-item__rate">
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                    <span class="product-item__star"></span>
+                  </div>
+                  <button class="product-item__like"></button>
+                </div>
+                <a href="#" class="product-item__title">
+                  <h3 class="product-item__title-text">
+                    <span class="product-item__title-kind">Удилище</span>
+                    <span class="product-item__title-name">
+                      Matze Koch Rollen
+                    </span>
+                  </h3>
+                </a>
+                <div class="product-item__price">
+                  <div class="product-item__price-values">
+                    <span class="product-item__current-price">
+                      13 490 р.
+                    </span>
+                    <span class="product-item__old-price">
+  
+                    </span>
+                  </div>
+                  <div class="product-item__discount-info">
+                    <span class="product-item__discount-message">Вы экономите</span>
+                    <span class="product-item__discount-value"></span>
+                  </div>
+                </div>
+                <button class="product-item__to-card">в корзину</button>
+              </div>
+            </article>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <section class="last-news">
+      <div class="container container--last-news">
+        <div class="thumbnail-list">
+          <article class="news-post">
+            <span class="news-post__date">13.02.2019</span>
+            <img src="../img/content/fish-picture.jpg" alt="fish-picture1" class="news-post__image">
+            <div class="news-post__content">
+              <h3 class="news-post__title">
+                Презентация нового продукта
+              </h3>
+              <div class="news-post__text">
+                <p class="news-post__description">
+                  Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...
+                </p>
+              </div>
+              <a href="#" class="news-post__read-more">подробнее</a>
             </div>
           </article>
+          <article class="news-post">
+            <span class="news-post__date">13.02.2019</span>
+            <img src="../img/content/fish-picture2.jpg" alt="fish-picture1" class="news-post__image">
+            <div class="news-post__content">
+              <h3 class="news-post__title">
+                Презентация нового продукта
+              </h3>
+              <div class="news-post__text">
+                <p class="news-post__description">
+                  Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...
+                </p>
+              </div>
+              <a href="#" class="news-post__read-more">подробнее</a>
+            </div>
+          </article>
+          <article class="news-post">
+            <span class="news-post__date">13.02.2019</span>
+            <img src="../img/content/fish-picture3.jpg" alt="fish-picture1" class="news-post__image">
+            <div class="news-post__content">
+              <h3 class="news-post__title">
+                Презентация нового продукта
+              </h3>
+              <div class="news-post__text">
+                <p class="news-post__description">
+                  Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных...
+                </p>
+              </div>
+              <a href="#" class="news-post__read-more">подробнее</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container container--subcribe">
+        <h4 class="subscribe__slogan">
+          Подпишитесь на рассылку и будьте в курсе новостей, акций, новинок
+        </h4>
+        <form action="http://localhost:3000/" class="subscribe__form">
+          <div class="subscribe__form-wrapper">
+            <input type="email" class="subscribe__email-input" placeholder="Ваш email">
+            <button type="submit" name="subscribe-submit" class="subscribe__email-submit">подписаться</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="discounts">
+      <div class="container">
+        <div class="discounts__item-list">
+          <article class="discount-item">
+            <div class="discount-item__title">
+              <h3 class="discount-item__title-text">
+                Скидка </br> на все лески
+              </h3>
+              <span class="discount-item__date">до 15 декабря</span>
+            </div>
+            <div class="discount-item__info">
+              <a href="#" class="discount-item__read-more"></a>
+              <span class="discount-item__value">-30%</span>
+            </div>
+            <img src="../img/content/fishing-line.png" alt="fishing line" class="discount-item__image">
+          </article>
+          <article class="discount-item">
+            <div class="discount-item__title">
+              <h3 class="discount-item__title-text">
+                Скидка </br> на все катушки
+              </h3>
+              <span class="discount-item__date">до 15 декабря</span>
+            </div>
+            <div class="discount-item__info">
+              <a href="#" class="discount-item__read-more"></a>
+              <span class="discount-item__value">-10%</span>
+            </div>
+            <img src="../img/content/discount2.png" alt="fishing line" class="discount-item__image">
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="about-company">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="section-title__text">о компании</h2>
+        </div>
+        <div class="about-company__content">
+          <div class="about-company__content-column">
+            <p class="about-company__content-item">
+              1По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+            </p>
+            <p class="about-company__content-item">
+              2По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+
+            </p>
+            <p class="about-company__content-item">
+              3По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+            </p>
+          </div>
+          <div class="about-company__content-column">
+            <p class="about-company__content-item">
+              4По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+              По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен. По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен. По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -214,17 +742,112 @@
   <footer class="footer">
     <div class="container container--footer">
       <div class="footer__content">
-        <div class="logo logo--footer">
-          <img src="../img/decor/logo-footer.png" alt="logo" class="logo__image logo__image--footer">
+        <div class="footer__content-company">
+          <div class="logo">
+            <a href="#" class="logo__home-link logo__home-link--footer">
+              LOGOtype
+            </a>
+            <p class="logo__description logo__description--footer">
+              официальный представитель в России
+            </p>
+          </div>
+          <div class="footer__materials">
+            <a href="#" class="footer__link footer__link--info">Скачать каталог 2020</a>
+            <a href="#" class="footer__link footer__link--info">Связатья с нами</a>
+          </div>
         </div>
+        <div class="footer__content-navigation">
+          <div class="footer__links-block">
+            <h4 class="footer__links-block-title">компания</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">о компании</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">акции</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">новости</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">блог</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">эксперты</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links-block">
+            <h4 class="footer__links-block-title">покупателям</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">каталог</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">оплата</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">доставка</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">возврат</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__link">помощь</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links-block">
+            <h4 class="footer__links-block-title">оптовикам</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="tel:8800000000" class="footer__link">8 (800) 000 00 00</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="tel:8800000000" class="footer__link">8 (800) 000 00 00</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="tel:8800000000" class="footer__link">8 (800) 000 00 00</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="mailto:info@mail.ru" class="footer__link footer__link--info">info@mail.ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links-block">
+            <h4 class="footer__links-block-title">контакты</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item footer__links-item--address">
+                <p class="footer__company-address"></p>
+              </li>
+              <li class="footer__links-item">
+                <a href="tel:8800000000" class="footer__link">8 (800) 000 00 00</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="tel:8800000000" class="footer__link">8 (800) 000 00 00</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="mailto:info@yandex.ru" class="footer__link footer__link--info">info@yandex.ru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy;&nbsp;2010-2019 Ltd. Все права защищены.</p>
         <div class="footer__social">
-          <a href="#" class="footer__social-link footer__social-link--vk"></a>
-          <a href="#" class="footer__social-link footer__social-link--instagram"></a>
-          <a href="#" class="footer__social-link footer__social-link--facebook"></a>
-        </div>
-        <div class="footer__info">
-          <p class="footer__copyright">BRUME interior, 2017 &nbsp; &copy;</p>
-          <p class="footer__author-design">HolodnayaDesign</p>
+          <a href="#" class="footer__social-link footer__social-link--vk">
+            <img src="../img/decor/vk.png" alt="social" class="footer__social-link-image">
+          </a>
+          <a href="#" class="footer__social-link footer__social-link--facebook">
+            <img src="../img/decor/facebook.png" alt="social" class="footer__social-link-image">
+          </a>
+          <a href="#" class="footer__social-link footer__social-link--instagram">
+            <img src="../img/decor/instagram.png" alt="social" class="footer__social-link-image">
+          </a>
         </div>
       </div>
     </div>

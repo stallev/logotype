@@ -1,1 +1,17 @@
-.about-company{}
+.about-company{
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__content-item{
+    width: 542px;
+    margin-bottom: 15px;
+    color: $content-color;
+    font-family: "Panton - Semi Bold";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.35px;
+  }
+}

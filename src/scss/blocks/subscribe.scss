@@ -1,1 +1,53 @@
-.subscribe{}
+.subscribe{
+  padding-top: 300px;
+  margin-top: -281px;
+  margin-bottom: 40px;
+  background-image: url("../img/decor/grid-bg.png");
+  background-repeat: repeat;
+  padding-bottom: 45px;
+  &__slogan{
+    margin-bottom: 40px;
+    text-align: center;
+    color: $content-color;
+    font-family: $content-ff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  &__form{
+  width: 100%;
+  }
+  &__form-wrapper{
+    display: flex;
+  }
+  &__email-input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    //flex-grow: 1;
+    background-color: #fff;
+    color: #6f6f6f;
+    font-family: "Panton - Semi Bold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    // Text style for "В, аш emai"
+    letter-spacing: 0.45px;
+  }
+  &__email-submit{
+    display: block;
+    box-sizing: border-box;
+    padding: 22px 55px;
+    background-color: #6f6f6f;
+    background-image: linear-gradient(to left, #0187c1 0%, #3ac0ef 100%);
+    color: #ffffff;
+    font-family: $content-ff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    // Text style for "п, одписат"
+    letter-spacing: 3.2px;
+  }
+}
